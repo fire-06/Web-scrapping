@@ -17,7 +17,7 @@ def get_vacancies(url):
 
     soup = BeautifulSoup(response.text, 'lxml')
 
-    # Обновленные селекторы для поиска вакансий
+    
     vacancy_items = soup.find_all('div', class_='vacancy-serp-item')  
     print(f"Найдено {len(vacancy_items)} вакансий")
 
